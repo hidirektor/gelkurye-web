@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="FooYes - Quality delivery or takeaway food">
-    <meta name="author" content="Ansonika">
-    <title>FooYes - Quality delivery or takeaway food</title>
+    <meta name="description" content="GelKurye - Kayıt Ol">
+    <meta name="author" content="hidirektor">
+    <title>GelKurye - Kayıt Ol</title>
 
     <!-- Favicons-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -36,40 +36,66 @@
 	<div id="register">
 		<aside>
 			<figure>
-				<a href="index.html"><img src="img/logo_sticky.svg" width="140" height="35" alt=""></a>
+				<a href="index.html"><img src="img/gecicilogo.png" width="140" height="35" alt=""></a>
 			</figure>
-			<div class="access_social">
-					<a href="#0" class="social_bt facebook">Register with Facebook</a>
-					<a href="#0" class="social_bt google">Register with Google</a>
-				</div>
-            <div class="divider"><span>Or</span></div>
 			<form autocomplete="off">
 				<div class="form-group">
-					<input class="form-control" type="text" placeholder="Name">
+					<input class="form-control" type="text" placeholder="İsim Soyisim">
 					<i class="icon_pencil-edit"></i>
 				</div>
 				<div class="form-group">
-					<input class="form-control" type="text" placeholder="Last Name">
+					<input class="form-control" type="text" placeholder="T.C. Kimlik Numarası">
 					<i class="icon_pencil-edit"></i>
 				</div>
 				<div class="form-group">
-					<input class="form-control" type="email" placeholder="Email">
+					<input class="form-control" type="text" placeholder="E-Posta Adresi">
 					<i class="icon_mail_alt"></i>
 				</div>
 				<div class="form-group">
-					<input class="form-control" type="password" id="password1" placeholder="Password">
+					<input class="form-control" type="email" placeholder="Kullanıcı Adı">
+					<i class="icon_id"></i>
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="email" placeholder="Telefon Numarası">
+					<i class="icon_phone"></i>
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="password" id="password1" placeholder="Şifre">
 					<i class="icon_lock_alt"></i>
 				</div>
 				<div class="form-group">
-					<input class="form-control" type="password" id="password2" placeholder="Confirm Password">
+					<input class="form-control" type="password" id="password2" placeholder="Şifreni Onayla">
 					<i class="icon_lock_alt"></i>
 				</div>
+				<div class="checkboxes text-center">
+					<label class="container_check">Kurye
+						<input type="checkbox" id="kuryeCheckbox">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container_check">İşletme
+						<input type="checkbox" id="isletmeCheckbox">
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="form-group" id="isletmeAdiDiv" style="display: none;">
+					<input class="form-control" type="text" placeholder="İşletme Adı">
+					<i class="icon_building"></i>
+				</div>
+				<div class="form-group" id="isletmeAdresDiv" style="display: none;">
+					<input class="form-control" type="text" placeholder="İşletme Adresi">
+					<i class="icon_map_alt"></i>
+				</div>
 				<div id="pass-info" class="clearfix"></div>
-				<a href="#0" class="btn_1 gradient full-width">Register Now!</a>
-				<div class="text-center mt-2"><small>Already have an acccount? <strong><a href="#0">Sign In</a></strong></small></div>
+				<a class="btn_1 gradient full-width">Kayıt Ol!</a>
+				<div class="text-center mt-2"><small>Zaten hesabın var mı? <strong><a href="login.html">Giriş Yap</a></strong></small></div>
 			</form>
-			<div class="copy">© 2020 FooYes</div>
 		</aside>
+		<div class="copy">
+			<ul>
+				<li><a href="https://github.com/hidirektor">Coded by hidirektor with ♥</a></li>
+				<li><span>© GelKurye</span></li>
+			</ul>
+		</div>
 	</div>
 	<!-- /login -->
 	
@@ -79,7 +105,68 @@
     <script src="assets/validate.js"></script>
 	
 	<!-- SPECIFIC SCRIPTS -->
-	<script src="js/pw_strenght.js"></script>	
-  
+	<script src="js/pw_strenght.js"></script>
+
+	<script>
+		const isletmeCheckbox = document.querySelector("#isletmeCheckbox");
+		const kuryeCheckbox = document.querySelector("#kuryeCheckbox");
+		const isletmeAdiDiv = document.getElementById("isletmeAdiDiv");
+		const isletmeAdresDiv = document.getElementById("isletmeAdresDiv");
+
+		isletmeCheckbox.addEventListener("change", () => {
+			if (isletmeCheckbox.checked) {
+				isletmeAdiDiv.style.display = "block";
+				isletmeAdresDiv.style.display = "block";
+				kuryeCheckbox.checked = false;
+			} else {
+				isletmeAdiDiv.style.display = "none";
+				isletmeAdresDiv.style.display = "none";
+			}
+		});
+
+		kuryeCheckbox.addEventListener("change", () => {
+			if (kuryeCheckbox.checked) {
+				isletmeCheckbox.checked = false;
+				isletmeAdiDiv.style.display = "none";
+				isletmeAdresDiv.style.display = "none";
+			}
+		});
+	</script>
+
+	<script>
+		document.querySelector(".btn_1").addEventListener("click", function(event) {
+			event.preventDefault();
+			const url = "https://google.com";
+			const data = {
+				key1: "value1",
+				key2: "value2"
+			};
+
+			fetch(url, {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify(data)
+			})
+					.then(response => {
+						if (response.status === 200) {
+							return response.json();
+						} else {
+							throw new Error("İstek başarısız! HTTP durum kodu: " + response.status);
+						}
+					})
+					.then(jsonData => {
+						if (jsonData.message === "Kayıt başarılı") {
+							window.location.href = "login.html";
+						} else {
+							console.error("Kayıt başarısız: " + jsonData.message);
+						}
+					})
+					.catch(error => {
+						console.error("İstek hatası: " + error.message);
+					});
+		});
+	</script>
 </body>
 </html>

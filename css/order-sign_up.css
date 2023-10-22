@@ -216,6 +216,11 @@
   color: #999;
 }
 
+.copy ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 .access_social {
   margin-top: 40px;
 }
