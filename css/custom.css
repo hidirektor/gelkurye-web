@@ -1,13 +1,14 @@
 /*============================================================================================*/
-/* Your custom styles below */
+/* Custom styles below */
 /*============================================================================================*/
 .image-links {
     text-align: center;
+    justify-content: center;
 }
 
 .image-links a {
     display: inline-block;
-    margin: 10px; /* İstenilen boşluk değeri */
+    margin: 10px;
 }
 
 .image-links a img {
