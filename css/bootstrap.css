@@ -764,7 +764,7 @@ progress {
 
 .col-9 {
   flex: 0 0 auto;
-  width: 75%;
+  width: 100%;
 }
 
 .col-10 {
@@ -973,7 +973,7 @@ progress {
 
   .col-sm-9 {
     flex: 0 0 auto;
-    width: 75%;
+    width: 100%;
   }
 
   .col-sm-10 {
@@ -1186,7 +1186,7 @@ progress {
 
   .col-md-9 {
     flex: 0 0 auto;
-    width: 75%;
+    width: 100%;
   }
 
   .col-md-10 {
@@ -1399,7 +1399,7 @@ progress {
 
   .col-lg-9 {
     flex: 0 0 auto;
-    width: 75%;
+    width: 100%;
   }
 
   .col-lg-10 {
@@ -1612,7 +1612,7 @@ progress {
 
   .col-xl-9 {
     flex: 0 0 auto;
-    width: 75%;
+    width: 100%;
   }
 
   .col-xl-10 {
@@ -1825,7 +1825,7 @@ progress {
 
   .col-xxl-9 {
     flex: 0 0 auto;
-    width: 75%;
+    width: 100%;
   }
 
   .col-xxl-10 {
@@ -6928,7 +6928,7 @@ textarea.form-control-lg {
 }
 
 .w-75 {
-  width: 75% !important;
+  width: 100% !important;
 }
 
 .w-100 {
