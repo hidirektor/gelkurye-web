@@ -4060,7 +4060,7 @@ header.black_nav .dropdown.user a:hover {
 }
 @media (max-width: 767px) {
   .promo i {
-    display: none;
+    /*display: none;*/
   }
 }
 .promo.mb_30 {

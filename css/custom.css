@@ -10,3 +10,8 @@
     margin: 10px; /* İstenilen boşluk değeri */
 }
 
+.image-links a img {
+    max-width: 100%;
+    height: auto;
+}
+
