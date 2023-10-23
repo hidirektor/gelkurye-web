@@ -59,7 +59,7 @@
 				<ul>
 					<li><a href="index.html">Anasayfa</a></li>
 					<li><a href="hakkimizda.html">Hakkımızda</a></li>
-					<li><a href="kariyer.html">Kariyer</a></li>
+					<li><a href="#" data-bs-toggle="modal" data-bs-target="#kariyer-dialog">Kariyer</a></li>
 					<li><a href="isortagi.html">İş Ortağımız Olun</a></li>
 					<li class="submenu">
 						<a class="show-submenu">Mobile App</a>
@@ -294,7 +294,7 @@
 						<ul>
 							<li><a href="destek.html">Destek Alın</a></li>
 							<li><a href="hakkimizda.html">Hakkımızda</a></li>
-							<li><a href="kariyer.html">Kariyer</a></li>
+							<li><a href="#" data-bs-toggle="modal" data-bs-target="#kariyer-dialog">Kariyer</a></li>
 							<li><a href="isortagi.html">İş Ortağımız Olun</a></li>
 						</ul>
 					</div>
@@ -396,6 +396,27 @@
 		<!--form -->
 	</div>
 	<!-- /Sign In Modal -->
+
+	<!-- Modal terms -->
+	<div class="modal fade" id="kariyer-dialog" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">Kariyer İmkanı</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p><strong>GelKurye</strong>, içerisinde başvuru yapabileceğiniz açık bir pozisyon bulunmamaktadır.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-bs-dismiss="modal">Kapat</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
 
 	<!-- COMMON SCRIPTS -->
     <script src="js/common_scripts.min.js"></script>
