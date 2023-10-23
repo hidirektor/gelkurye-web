@@ -51,18 +51,18 @@
             </a>
            <nav class="main-menu">
                 <div id="header_menu">
-                    <a href="#0" class="open_close">
+                    <a class="open_close">
                         <i class="icon_close"></i><span>Menü</span>
                     </a>
                     <a href="index.html"><img src="img/gecicilogo.png" width="162" height="35" alt=""></a>
                 </div>
                 <ul>
 					<li><a href="index.html">Anasayfa</a></li>
-					<li><a href="#0">Hakkımızda</a></li>
-                    <li><a href="#0">Kariyer</a></li>
+					<li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="kariyer.html">Kariyer</a></li>
                     <li><a href="isortagi.html">İş Ortağımız Olun</a></li>
 					<li class="submenu">
-                        <a href="#0" class="show-submenu">Mobile App</a>
+                        <a class="show-submenu">Mobile App</a>
                        <ul>
 						<li><a href="#0">Android App</a></li>
 						<li><a href="#0">IoS App</a></li>
@@ -84,7 +84,7 @@
                         <div class="col-xl-7 col-lg-8">
                             <h1>Kurye Olmak İstiyorum</h1>
                             <p>Kendi işinin patronu ol, çalıştığın kadar kazan!</p>
-                            <form method="post" action="register.html">
+                            <form method="post" action="kuryekayit.html">
 								<div class="col-lg-2">
                                     <button class="btn_1 medium gradient pulse_bt mt-2" type="submit">Hemen Başvur</button>
                                 </div>
@@ -168,8 +168,8 @@
                     <div class="collapse dont-collapse-sm links" id="collapse_1">
                         <ul>
                             <li><a href="destek.html">Destek Alın</a></li>
-                            <li><a href="#0">Hakkımızda</a></li>
-                            <li><a href="#0">Kariyer</a></li>
+                            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                            <li><a href="kariyer.html">Kariyer</a></li>
                             <li><a href="isortagi.html">İş Ortağımız Olun</a></li>
                         </ul>
                     </div>
@@ -227,51 +227,50 @@
     <!--/footer-->
 
     <div id="toTop"></div><!-- Back to top button -->
-    
-<!-- Sign In Modal -->
-<div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
-    <div class="modal_header">
-        <h3>Giriş Yap</h3>
-    </div>
-    <form>
-        <div class="sign-in-wrapper">
-            <div class="form-group">
-                <label>Kullanıcı Adı</label>
-                <input type="email" placeholder="Kullanıcı Adı" class="form-control" name="email" id="email">
-                <i class="icon_mail_alt"></i>
-            </div>
-            <div class="form-group">
-                <label>Şifre</label>
-                <input type="password" placeholder="Şifre" class="form-control" name="password" id="password" value="">
-                <i class="icon_lock_alt"></i>
-            </div>
-            <div class="clearfix add_bottom_15">
-                <div class="checkboxes float-start">
-                    <label class="container_check">Beni Hatırla
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-                <div class="float-end"><a id="forgot" href="javascript:void(0);">Şifreni mi Unuttun?</a></div>
-            </div>
-            <div class="text-center">
-                <input type="submit" value="Giriş Yap" class="btn_1 full-width mb_5">
-                Henüz bir hesabın yok mu? <a href="register.html">Kayıt Ol</a>
-            </div>
-            <div id="forgot_pw">
+
+    <!-- Sign In Modal -->
+    <div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
+        <div class="modal_header">
+            <h3>Giriş Yap</h3>
+        </div>
+        <form>
+            <div class="sign-in-wrapper">
                 <div class="form-group">
-                    <label>Lütfen E-Posta Adresini Onayla</label>
-                    <input type="email" class="form-control" name="email_forgot" id="email_forgot">
+                    <label>Kullanıcı Adı</label>
+                    <input type="email" placeholder="Kullanıcı Adı" class="form-control" name="email" id="email">
                     <i class="icon_mail_alt"></i>
                 </div>
-                <p>E-Posta adresine şifreni sıfırlamak için bir link gönderiyoruz.</p>
-                <div class="text-center"><input type="submit" value="Reset Password" class="btn_1"></div>
+                <div class="form-group">
+                    <label>Şifre</label>
+                    <input type="password" placeholder="Şifre" class="form-control" name="password" id="password" value="">
+                    <i class="icon_lock_alt"></i>
+                </div>
+                <div class="clearfix add_bottom_15">
+                    <div class="checkboxes float-start">
+                        <label class="container_check">Beni Hatırla
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="float-end"><a id="forgot" href="javascript:void(0);">Şifreni mi Unuttun?</a></div>
+                </div>
+                <div class="text-center">
+                    <input type="submit" value="Giriş Yap" class="btn_1 full-width mb_5">
+                </div>
+                <div id="forgot_pw">
+                    <div class="form-group">
+                        <label>Lütfen E-Posta Adresini Onayla</label>
+                        <input type="email" class="form-control" name="email_forgot" id="email_forgot">
+                        <i class="icon_mail_alt"></i>
+                    </div>
+                    <p>E-Posta adresine şifreni sıfırlamak için bir link gönderiyoruz.</p>
+                    <div class="text-center"><input type="submit" value="Reset Password" class="btn_1"></div>
+                </div>
             </div>
-        </div>
-    </form>
-    <!--form -->
-</div>
-<!-- /Sign In Modal -->
+        </form>
+        <!--form -->
+    </div>
+    <!-- /Sign In Modal -->
 
     <!-- Modal Advertise -->
     <div class="popup_wrapper">

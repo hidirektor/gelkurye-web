@@ -21,7 +21,7 @@ aside {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 140vh;
+    height: 80vh;
 }
 
 aside .form-container {
