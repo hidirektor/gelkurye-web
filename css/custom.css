@@ -39,4 +39,12 @@ aside .form-container {
     margin-right: 20px;
 }
 
+#accordion_group .collapse {
+    display: none;
+}
+
+#accordion_group .collapse.show {
+    display: block;
+}
+
 
