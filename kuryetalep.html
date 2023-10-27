@@ -95,144 +95,114 @@
 		<!-- /hero_single -->
 
 		<div class="container margin_60_40" id="apply">
-
 			<div class="row justify-content-center">
-				<div class="col-lg-6 col-md-8">
-					<div class="main_title center">
-						<span><em></em></span>
-						<h2>Hemen Talep Et</h2>
-						<p>Kurye talep etmek için aşağıdaki formu doldurman yeterlidir.</p>
+				<div class="col-lg-5">
+					<div class="text-center add_bottom_15">
+						<h4>Lütfen aşağıdaki formu doldurun</h4>
+						<p>Kurye talep etmek için aşağıdaki formu doldurarak bizlere talep göndermeniz yeterlidir.</p>
 					</div>
-
-					<div id="wizard_container">
-						<div id="top-wizard">
-							<div id="progressbar"></div>
+					<div id="message-register"></div>
+					<form method="post" action="assets/register.php" id="register">
+						<h6>İletişim Bilgileri</h6>
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="*Talep Sahibi Adı & Soyadı" name="name_register" id="name_register">
+								</div>
+							</div>
 						</div>
-						<!-- /top-wizard -->
-						<form id="wrapped" method="POST">
-							<input id="website" name="website" type="text" value="">
-							<!-- Leave for security protection, read docs for details -->
-							<div id="middle-wizard">
-
-								<div class="step">
-									<h3 class="main_question"><strong>1/5</strong>Hangi şehirdesin?</h3>
-									<div class="form-group">
-										<div class="custom_select clearfix">
-											<select class="wide required" name="location">
-												<option value="">İl</option>
-												<option value="London">Manisa</option>
-												<option value="Paris">Aydın</option>
-											</select>
-										</div>
-									</div>
+						<!-- /row -->
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="*Talep Sahibi Cep Telefonu" name="name_register" id="username">
 								</div>
-
-								<div class="step">
-									<h3 class="main_question"><strong>3/5</strong>Hangi araçla paket dağıtımı yapacaksın?</h3>
-									<div class="form-group">
-										<label class="container_radio version_2">Motorsiklet
-											<input type="radio" name="vehicle" value="Bicycle" class="required">
-											<span class="checkmark"></span>
-										</label>
-									</div>
-									<p>
-										<strong><i class="icon_info"></i> Hatırlatma</strong><br>
-										Şuan için yalnızca elektrikli ya da içten yanmalı motora sahip motorsiklet kabul ediyoruz.
-									</p>
-								</div>
-								<!-- /step-->
-
-								<div class="step">
-									<h3 class="main_question"><strong>4/5</strong>Bizden nasıl haberin oldu?</h3>
-									<div class="form-group">
-										<label class="container_check version_2">Web Sitesi
-											<input type="checkbox" name="how_hear[]" value="Google Search Engine" class="required">
-											<span class="checkmark"></span>
-										</label>
-									</div>
-									<div class="form-group">
-										<label class="container_check version_2">Arkadaş
-											<input type="checkbox" name="how_hear[]" value="A friend of mine" class="required">
-											<span class="checkmark"></span>
-										</label>
-									</div>
-									<div class="form-group">
-										<label class="container_check version_2">Reklam
-											<input type="checkbox" name="how_hear[]" value="Print Advertise" class="required">
-											<span class="checkmark"></span>
-										</label>
-									</div>
-									<div class="form-group">
-										<label class="container_check version_2">Diğer
-											<input type="checkbox" name="how_hear[]" value="Other" class="required">
-											<span class="checkmark"></span>
-										</label>
-									</div>
-								</div>
-								<!-- /step-->
-
-								<div class="submit step">
-									<h3 class="main_question"><strong>5/5</strong>Bize kendinden bahset</h3>
-									<div class="form-group">
-										<input type="text" name="secnumber" class="form-control required" placeholder="T.C. Kimlik Numarası">
-									</div>
-									<div class="form-group">
-										<input type="text" name="firstname" class="form-control required" placeholder="İsim Soyisim">
-									</div>
-									<div class="form-group">
-										<input type="text" name="username" class="form-control required" placeholder="Kullanıcı Adı">
-									</div>
-									<div class="form-group">
-										<input type="email" name="email" class="form-control required" placeholder="E-Posta Adresi">
-									</div>
-									<div class="form-group">
-										<input type="text" name="telephone" class="form-control required" placeholder="Telefon Numarası">
-									</div>
-									<div class="row">
-										<div class="col-6">
-											<div class="form-group">
-												<label for="birthdate">Doğum Tarihi</label>
-												<input type="date" id="birthdate" name="birthdate" class="form-control required">
-											</div>
-										</div>
-										<div class="col-6">
-											<div class="form-group radio_input">
-												<label class="container_radio" style="display: flex; align-items: center;">Erkek
-													<input type="radio" name="gender" value="Male" class="required">
-													<span class="checkmark"></span>
-												</label>
-												<label class="container_radio" style="display: flex; align-items: center;">Kadın
-													<input type="radio" name="gender" value="Female" class="required">
-													<span class="checkmark"></span>
-												</label>
-											</div>
-										</div>
-									</div>
-									<!-- /row -->
-									<div class="form-group terms">
-										<label class="container_check">Başvuruyu tamamlamadan önce <a href="#" data-bs-toggle="modal" data-bs-target="#terms-txt">Şartlar ve Koşullar'ı</a>
-											<input type="checkbox" name="terms" value="Yes" class="required">
-											<span class="checkmark"></span>kabul et.
-										</label>
-									</div>
-								</div>
-								<!-- /step-->
-
 							</div>
-							<!-- /middle-wizard -->
-							<div id="bottom-wizard">
-								<button type="button" name="backward" class="backward">Geri</button>
-								<button type="button" name="forward" class="forward">İlerle</button>
-								<button type="submit" name="process" class="submit">Başvuruyu Tamamla</button>
+						</div>
+						<!-- /row -->
+						<div class="row add_bottom_15">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<input type="email" class="form-control" placeholder="*Talep Sahibi E-Posta Adresi" name="email_register" id="email_register">
+								</div>
 							</div>
-							<!-- /bottom-wizard -->
-						</form>
-					</div>
-					<!-- /Wizard container -->
+						</div>
+						<!-- /row -->
+						<h6>İşletme Bilgileri</h6>
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="*İşletme Ünvanı" name="restaurantname_register" id="restaurantname_register">
+								</div>
+							</div>
+						</div>
+						<!-- /row -->
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="*Marka Adı" name="address_register" id="address_register">
+								</div>
+							</div>
+						</div>
+						<!-- /row -->
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="*Mahalle" name="address_register" id="address_register">
+								</div>
+							</div>
+						</div>
+						<!-- /row -->
+						<div class="row add_bottom_15">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="İlçe" name="city_register" id="city_register">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<div class="custom_select submit">
+										<select name="country_register" id="country_register" class="form-control wide">
+											<option value="0">İl</option>
+											<option value="1">Manisa</option>
+											<option value="2">Aydın</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /row -->
+						<h6>Talep Bilgileri</h6>
+						<div class="col-md-6">
+							<div class="form-group">
+								<div class="custom_select submit">
+									<select name="country_register" id="courier_type" class="form-control wide">
+										<option value="0">*Talep Edilen Kurye Modeli</option>
+										<option value="1">Moto Kurye</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="*Talep Edilen Kurye Sayısı" name="name_register" id="courier_count">
+								</div>
+							</div>
+						</div>
+						<h6>Robot Testi</h6>
+						<div class="row add_bottom_25">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<input type="text" id="verify_register" class="form-control" placeholder="Lütfen işlemin sonucunu yazın: 3 + 1 =?">
+								</div>
+							</div>
+						</div>
+						<!-- /row -->
+						<div class="form-group text-center"><input type="submit" class="btn_1 medium gradient pulse_bt mt-2" value="Hemen Talep Edin" id="submit-register"></div>
+					</form>
 				</div>
-				<!-- /col -->
 			</div>
-			<!-- /row -->
 		</div>
 		<!-- /container -->
 
