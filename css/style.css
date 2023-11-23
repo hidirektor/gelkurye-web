@@ -1880,7 +1880,7 @@ header.sticky a.open_close:hover,
   }
   #logo img {
     width: auto;
-    height: 28px;
+    height: 56px;
   }
 }
 
@@ -1888,7 +1888,7 @@ header.sticky a.open_close:hover,
 .main-menu {
   position: relative;
   z-index: 9;
-  top: 10px;
+  top: 25px;
   float: right;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1896,6 +1896,7 @@ header.sticky a.open_close:hover,
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 .main-menu ul, .main-menu ul li {
   position: relative;
   margin: 0;
@@ -2345,6 +2346,7 @@ ul#top_menu li a.wishlist_bt_top:before {
   content: '\0043';
 }
 ul#top_menu li a.login {
+  top: 25px;
   text-indent: -9999px;
 }
 ul#top_menu li a.login:before {
