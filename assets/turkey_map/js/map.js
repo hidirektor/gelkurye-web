@@ -19,6 +19,22 @@ function bindActionEvents() {
     /// Set current city name.
     $(".movable-container-city-name").html(cityName.toUpperCase());
 
+    const contactInfo = `
+    <div class="contact-info">
+      <span class="icon">👤</span>Yetkili: Burak ERDİK<br>
+      <span class="icon">📞</span>İletişim: +90 538 639 04 76
+    </div>`;
+
+    const notAvailableMessage = '<div style="color: red;\n' +
+        '  font-family: Poppins Helvetica, sans-serif;\n' +
+        '  font-size: 14px;">Bu şehirde henüz hizmet vermemekteyiz.</div>';
+
+    if(cityName === "manisa" || cityName === "balikesir" || cityName === "mugla") {
+      $(".movable-container-parties-container").html(contactInfo);
+    } else {
+      $(".movable-container-parties-container").html(notAvailableMessage);
+    }
+
     $(e.currentTarget).css({
       fill: "#dcdcdcdc",
     });
@@ -26,9 +42,11 @@ function bindActionEvents() {
   }
 
   function onMouseoutCity(e) {
+    const cityName = $(e.currentTarget).parent().attr("id");
+
     $(".movable-container").hide();
 
-    if (e.currentTarget.id.toLowerCase() === "manisa" || e.currentTarget.id.toLowerCase() === "balikesir" || e.currentTarget.id.toLowerCase() === "mugla") {
+    if (cityName === "manisa" || cityName === "balikesir" || cityName === "mugla") {
       $(e.currentTarget).css({
         fill: "rgb(252, 137, 0)",
       });
@@ -51,9 +69,7 @@ function bindActionEvents() {
     } catch (e) {}
     //set left and top of div based on mouse position
     $(".movable-container").css("left", x - 25 + "px");
-    $(".movable-container").css(
-      "top",
-      y - parseInt($(".movable-container").css("height")) - 25 + "px"
+    $(".movable-container").css("top", y - parseInt($(".movable-container").css("height")) - 475 + "px"
     );
   };
 
